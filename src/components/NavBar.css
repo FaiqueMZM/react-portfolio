@@ -1,0 +1,84 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.brand-name h1 {
+  font-size: 30px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fca311;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.cv-button {
+  padding: 8px 15px;
+  border: 1px solid #fca311;
+  border-radius: 5px;
+  color: #fca311;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #14213d;
+  color: #ffffff;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 830px) {
+  .nav-links {
+    display: none; /* Hide the links by default */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for the dropdown */
+    background-color: #000000; /* Match navbar background */
+    position: absolute; /* Position it over other elements */
+    top: 50px; /* Adjust this based on navbar height */
+    left: 0;
+    padding: 0;
+    align-items: center;
+    z-index: 1; /* Ensure it appears above other content */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+    padding-bottom: 20px;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger menu */
+  }
+}
