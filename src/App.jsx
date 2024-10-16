@@ -6,7 +6,7 @@ function App() {
     <>
       <NavBar />
       <div>
-        <h3>about me</h3>
+        <h3>about me component</h3>
       </div>
     </>
   );
