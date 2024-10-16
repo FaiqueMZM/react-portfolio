@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* This will align the items (logo and links) vertically */
   background-color: #000000;
   padding: 10px;
 }
@@ -12,9 +12,15 @@
   margin-left: 30px;
 }
 
+.brand-name {
+  display: flex;
+  align-items: center; /* Align logo and text horizontally in the same line */
+}
+
 .brand-name h1 {
   font-size: 30px;
   margin: 0;
+  margin-left: 10px; /* Add spacing between the logo and text */
   color: #ffffff;
 }
 
@@ -22,6 +28,8 @@
   list-style: none;
   display: flex;
   gap: 30px;
+  transform: none;
+  opacity: 1;
 }
 
 .nav-links li {
@@ -54,31 +62,67 @@
 
 /* Hamburger menu styles */
 .menu-icon {
-  display: none; /* Hidden by default */
+  display: none;
   cursor: pointer;
+}
+
+/* Keyframes for opening (drop down) */
+@keyframes dropDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for closing (slide up) */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Active state animation (menu opening) */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 20px 0 20px 0;
+  margin: 0;
+  align-items: center;
+  z-index: 1;
+  animation: dropDown 0.5s ease forwards;
+}
+
+/* Inactive state animation (menu closing) */
+.nav-links.inactive {
+  animation: slideUp 0.5s ease forwards;
 }
 
 /* Media query for responsiveness */
 @media (max-width: 830px) {
   .nav-links {
-    display: none; /* Hide the links by default */
-    flex-direction: column; /* Stack links vertically */
-    width: 100%; /* Full width for the dropdown */
-    background-color: #000000; /* Match navbar background */
-    position: absolute; /* Position it over other elements */
-    top: 50px; /* Adjust this based on navbar height */
-    left: 0;
-    padding: 0;
-    align-items: center;
-    z-index: 1; /* Ensure it appears above other content */
+    display: none;
   }
 
-  .nav-links.active {
-    display: flex; /* Show links when active */
-    padding-bottom: 20px;
+  .nav-links.active,
+  .nav-links.inactive {
+    display: flex;
   }
 
   .menu-icon {
-    display: block; /* Show the hamburger menu */
+    display: block; /* Show hamburger menu */
   }
 }

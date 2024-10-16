@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/apple-touch-icon.png";
-import { FaBars, FaTimes } from "react-icons/fa"; // Import hamburger and close icons
+import { FaTimes } from "react-icons/fa";
+import { RiMenu5Fill } from "react-icons/ri";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to track menu open/close
+  const [isClosing, setIsClosing] = useState(false); // State for closing animation
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      setIsClosing(true); // Trigger the closing animation
+      setTimeout(() => {
+        setIsOpen(false); // Close the menu after animation
+        setIsClosing(false); // Reset closing animation state
+      }, 500); // The timeout matches the closing animation duration
+    } else {
+      setIsOpen(true); // Open the menu immediately
+    }
   };
 
   return (
@@ -19,11 +29,14 @@ const NavBar = () => {
         {isOpen ? (
           <FaTimes size={30} color="#fca311" />
         ) : (
-          <FaBars size={30} color="#fca311" />
-        )}{" "}
-        {/* Hamburger icon */}
+          <RiMenu5Fill size={30} color="#fca311" />
+        )}
       </div>
-      <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+      <ul
+        className={`nav-links ${isOpen ? "active" : ""} ${
+          isClosing ? "inactive" : ""
+        }`}
+      >
         <li>
           <a href="#about">About Me</a>
         </li>
