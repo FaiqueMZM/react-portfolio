@@ -14,7 +14,7 @@ const Hero = () => {
           <br />
           I'm Faique Inaas
         </h1>
-        <h2 className="hero-description">Software Engineer</h2>
+        <h2 className="hero-description">I'm a Software Engineer. </h2>
       </div>
       <div className="shape-divider"></div> {/* Shape divider goes here */}
     </section>
