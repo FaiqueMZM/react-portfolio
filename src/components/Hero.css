@@ -1,0 +1,88 @@
+/* General section styling */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+/* Container for the image */
+.hero-image-container {
+  z-index: 2; /* Hero image on top */
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  mask-image: url("../assets/portrait-shape.svg"); /* Custom SVG shape */
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("../assets/portrait-shape.svg"); /* Safari compatibility */
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+}
+
+/* Content box with your name and description */
+.hero-content {
+  position: relative;
+  z-index: 3; /* Below the image but above the shape divider */
+  margin-top: -100px; /* Adjust to overlap under the image */
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #14213d;
+  margin: 0;
+}
+
+.hero-description {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #14213d;
+}
+
+/* Shape divider */
+.shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/wave.svg"); /* Add your SVG shape */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1; /* Shape divider at the lowest level */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 830px) {
+  .hero {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .hero-image {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    background-color: #e5e5e570;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .hero-description {
+    font-size: 24px;
+    text-align: center;
+  }
+}
