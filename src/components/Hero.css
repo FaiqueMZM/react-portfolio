@@ -1,18 +1,17 @@
-/* General section styling */
 .hero {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
+  gap: 72px;
+  padding: 72px 0;
   background-color: #e5e5e5;
   overflow: hidden;
 }
 
-/* Container for the image */
 .hero-image-container {
-  z-index: 2; /* Hero image on top */
+  z-index: 2;
 }
 
 .hero-image {
@@ -28,14 +27,16 @@
   -webkit-mask-repeat: no-repeat;
 }
 
-/* Content box with your name and description */
 .hero-content {
   position: relative;
-  z-index: 3; /* Below the image but above the shape divider */
-  margin-top: -100px; /* Adjust to overlap under the image */
+  z-index: 3;
   text-align: left;
   padding: 20px;
   border-radius: 10px;
+}
+
+.hero-intro {
+  margin: 0;
 }
 
 .hero-title {
@@ -53,9 +54,9 @@
   border-right: 3px solid #14213d; /* Cursor effect */
   animation: typing 7s steps(30, end) infinite,
     blink-caret 0.75s step-end infinite; /* Typing and blinking effect */
+  text-decoration: underline;
 }
 
-/* Typing effect for the description */
 @keyframes typing {
   0%,
   100% {
@@ -66,7 +67,6 @@
   }
 }
 
-/* Blinking effect for the cursor */
 @keyframes blink-caret {
   from,
   to {
@@ -77,17 +77,16 @@
   }
 }
 
-/* Shape divider */
 .shape-divider {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 300px;
-  background-image: url("../assets/wave.svg"); /* Add your SVG shape */
+  background-image: url("../assets/wave(2).svg");
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1; /* Shape divider at the lowest level */
+  z-index: 1;
 }
 
 /* Responsive design for smaller screens */
@@ -95,6 +94,12 @@
   .hero {
     flex-direction: column;
     padding: 0 20px;
+  }
+
+  .hero-content {
+    padding: 0;
+    margin-top: -100px;
+    text-align: center;
   }
 
   .hero-image {
@@ -111,5 +116,9 @@
   .hero-description {
     font-size: 24px;
     text-align: center;
+  }
+
+  .shape-divider {
+    background-image: url("../assets/wave(1).svg"); /* Change the SVG shape */
   }
 }

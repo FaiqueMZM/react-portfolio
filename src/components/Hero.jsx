@@ -9,12 +9,9 @@ const Hero = () => {
         <img src={heroImage} alt="Hero" className="hero-image" />
       </div>
       <div className="hero-content">
-        <h1 className="hero-title">
-          Hey,
-          <br />
-          I'm Faique Inaas
-        </h1>
-        <h2 className="hero-description">I'm a Software Engineer. </h2>
+        <h2 className="hero-intro">HEY! MY NAME IS</h2>
+        <h1 className="hero-title">FAIQUE INAAS</h1>
+        <h2 className="hero-description">I'm a Software Engineer.... </h2>
       </div>
       <div className="shape-divider"></div> {/* Shape divider goes here */}
     </section>

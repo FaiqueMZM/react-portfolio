@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* This will align the items (logo and links) vertically */
+  align-items: center;
   background-color: #000000;
   padding: 10px;
 }
@@ -14,13 +14,13 @@
 
 .brand-name {
   display: flex;
-  align-items: center; /* Align logo and text horizontally in the same line */
+  align-items: center;
 }
 
 .brand-name h1 {
   font-size: 30px;
   margin: 0;
-  margin-left: 10px; /* Add spacing between the logo and text */
+  margin-left: 10px;
   color: #ffffff;
 }
 
@@ -60,7 +60,6 @@
   color: #ffffff;
 }
 
-/* Hamburger menu styles */
 .menu-icon {
   display: none;
   cursor: pointer;
