@@ -1,19 +1,19 @@
 .technologies {
   padding: 50px 100px;
-  background-color: #e5e5e5;
+  background-color: #14213d;
   text-align: center;
 }
 
 .technologies-title {
   font-size: 36px;
-  color: #14213d;
-  margin-bottom: 40px;
-  text-decoration: underline #14213d;
+  color: #e5e5e5;
+  margin: 0 0 40px 0;
+  text-decoration: underline #e5e5e5;
 }
 
 .technology-category {
   margin-bottom: 40px;
-  color: #14213d;
+  color: #e5e5e5;
 }
 
 .technologies-grid {
@@ -37,12 +37,13 @@
 .technology-logo {
   width: 70px;
   height: 70px;
+  border-radius: 5px;
 }
 
 .technology-name {
   margin-top: 5px;
   font-size: 16px;
-  color: #14213d;
+  color: #e5e5e5;
 }
 
 /* Databases and Cloud Services Flexbox */
@@ -50,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Align to top */
-  margin: 0 150px;
+  margin: 0 200px;
 }
 
 .databases {
@@ -73,6 +74,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.technology-item-inline:hover {
+  transform: scale(1.1);
 }
 
 /* Media query for responsiveness */

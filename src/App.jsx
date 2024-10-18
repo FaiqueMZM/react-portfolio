@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
 import Technologies from "./components/Technologies";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
       <NavBar />
       <Hero />
       <AboutMe />
+      <Projects />
       <Technologies />
       <div>
-        <h3>projects</h3>
+        <h3>contact me</h3>
       </div>
     </>
   );
