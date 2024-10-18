@@ -1,19 +1,19 @@
 .technologies {
   padding: 50px 100px;
-  background-color: #14213d;
+  background-color: #e5e5e5;
   text-align: center;
 }
 
 .technologies-title {
   font-size: 36px;
-  color: #e5e5e5;
+  color: #14213d;
   margin: 0 0 40px 0;
   text-decoration: underline #e5e5e5;
 }
 
 .technology-category {
   margin-bottom: 40px;
-  color: #e5e5e5;
+  color: #14213d;
 }
 
 .technologies-grid {
@@ -43,7 +43,7 @@
 .technology-name {
   margin-top: 5px;
   font-size: 16px;
-  color: #e5e5e5;
+  color: #14213d;
 }
 
 /* Databases and Cloud Services Flexbox */

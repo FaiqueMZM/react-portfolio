@@ -1,0 +1,36 @@
+.projects-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #14213d;
+}
+
+.projects-title {
+  font-size: 36px;
+  color: #e5e5e5;
+  margin: 0 0 40px 0;
+}
+
+.project-card {
+  width: 80%; /* Default width for larger screens */
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s; /* Smooth hover transition */
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  background-color: #fca311;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .project-card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
