@@ -1,0 +1,30 @@
+.about-me {
+  padding: 50px 20px;
+  background-color: #14213d;
+  text-align: center;
+}
+
+.about-me-title {
+  font-size: 36px;
+  color: #e5e5e5;
+  margin: 0 0 40px 0;
+}
+
+.about-me-description {
+  font-size: 18px;
+  color: #e5e5e5;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 830px) {
+  .about-me-title {
+    font-size: 28px;
+  }
+
+  .about-me-description {
+    font-size: 16px;
+  }
+}
