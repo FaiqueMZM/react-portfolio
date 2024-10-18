@@ -16,34 +16,61 @@ import sqlite from "../assets/sqlite.svg";
 import aws from "../assets/aws.svg";
 
 const technologies = [
-  { name: "Java", logo: java },
-  { name: "JavaScript", logo: javascript },
-  { name: "TypeScript", logo: typescript },
-  { name: "C++", logo: cpp },
-  { name: "Pyhton", logo: python },
-  { name: "PHP", logo: php },
-  { name: "HTML", logo: html },
-  { name: "CSS", logo: css },
-  { name: "Bootstrap", logo: bootstrap },
-  { name: "ReactJS", logo: reactjs },
-  { name: "NodeJS", logo: nodejs },
-  { name: "MySQL", logo: mysql },
-  { name: "SQLite", logo: sqlite },
-  { name: "AWS", logo: aws },
+  {
+    category: "Languages",
+    items: [
+      { name: "Java", logo: java },
+      { name: "JavaScript", logo: javascript },
+      { name: "TypeScript", logo: typescript },
+      { name: "C++", logo: cpp },
+      { name: "Python", logo: python },
+      { name: "PHP", logo: php },
+    ],
+  },
+  {
+    category: "Web Development",
+    items: [
+      { name: "HTML", logo: html },
+      { name: "CSS", logo: css },
+      { name: "Bootstrap", logo: bootstrap },
+      { name: "ReactJS", logo: reactjs },
+      { name: "NodeJS", logo: nodejs },
+    ],
+  },
+  {
+    category: "Databases",
+    items: [
+      { name: "MySQL", logo: mysql },
+      { name: "SQLite", logo: sqlite },
+    ],
+  },
+  {
+    category: "Cloud Services",
+    items: [{ name: "AWS", logo: aws }],
+  },
 ];
 
 const Technologies = () => {
   return (
     <section id="technologies" className="technologies">
       <h2 className="technologies-title">TECHNOLOGIES</h2>
-      <div className="technologies-grid">
-        {technologies.map((tech, index) => (
-          <div key={index} className="technology-item">
-            <img src={tech.logo} alt={tech.name} className="technology-logo" />
-            <p className="technology-name">{tech.name}</p>
+      {technologies.map((category, categoryIndex) => (
+        <div key={categoryIndex} className="technology-category">
+          <h3 className="category-title">{category.category}</h3>
+          <div className="technologies-grid">
+            {category.items.map((tech, index) => (
+              <div key={index} className="technology-item">
+                <img
+                  src={tech.logo}
+                  alt={tech.name}
+                  className="technology-logo"
+                />
+                <p className="technology-name">{tech.name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </section>
   );
 };
