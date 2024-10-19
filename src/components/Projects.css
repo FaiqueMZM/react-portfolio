@@ -12,7 +12,7 @@
 }
 
 .project-card {
-  width: 80%; /* Default width for larger screens */
+  width: 80%;
   max-width: 500px;
   height: 400px;
   margin: 20px;
@@ -21,15 +21,17 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s; /* Smooth hover transition */
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center align items horizontally */
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project-card:hover {
-  transform: scale(1.1);
-  background-color: #fca311;
+@media (min-width: 830px) {
+  .project-card:hover {
+    transform: scale(1.1);
+    background-color: #fca311;
+  }
 }
 
 .project-name {
@@ -45,16 +47,16 @@
 .github-link {
   color: #14213d;
   text-decoration: none;
-  margin-top: 10px; /* Add some margin for spacing */
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center the link */
-  align-items: center; /* Center the logo vertically */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .github-logo {
   width: 20px;
   height: 20px;
-  margin-left: 5px; /* Optional: Add margin to separate the text from the logo */
+  margin-left: 5px;
 }
 
 @media (max-width: 600px) {

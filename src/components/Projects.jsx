@@ -18,7 +18,7 @@ const Projects = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
     ],
@@ -47,7 +47,7 @@ const Projects = () => {
             href="https://github.com/FaiqueMZM/iCars-AWS-Project"
             target="_blank"
           >
-            Github
+            Github Repository Link
             <img className="github-logo" src={github} />
           </a>
         </div>
@@ -72,9 +72,104 @@ const Projects = () => {
             href="https://github.com/FaiqueMZM/Smart-Surveillance-System-Using-VGG19-and-ConvLSTM"
             target="_blank"
           >
-            Github
+            Github Repository Link
             <img className="github-logo" src={github} />
           </a>
+        </div>
+        <div className="project-card">
+          <h2 className="project-name">Future Seekers LK</h2>
+          <p className="project-description">
+            As part of an agile group project, Future Seekers LK was developed
+            to facilitate job seeking and hiring processes for applicants and
+            employers.
+            <br /> This platform was built using the CodeIgniter framework
+            alongside HTML, CSS, JavaScript, PHP, and MySQL. Throughout the
+            project, I gained valuable experience in understanding client
+            requirements, crafting user stories and personas, and utilizing
+            project management software (Asana).
+            <br /> The project involved working through sprints, providing
+            insight into agile methodologies and teamwork in a dynamic
+            environment.
+          </p>
+          <p>Associated with University of Staffordshire</p>
+        </div>
+        <div className="project-card">
+          <h2 className="project-name">Inventory Management System</h2>
+          <p className="project-description">
+            The Inventory Management System is a comprehensive application
+            designed to manage inventory operations effectively.
+            <br /> Initially developed as a command-line interface (CLI)
+            application, it emphasized clean coding principles and implemented
+            software design patterns, including Singleton, Command, Factory,
+            Builder, and Facade.
+            <br /> The project transitioned into a Java Servlet Application
+            using the MVC architecture, with user interfaces built using HTML
+            and JSP.
+            <br /> Key features included concurrency handling to ensure smooth
+            client-server interactions, enhancing the application's efficiency
+            and usability.
+          </p>
+          <p>Associated with University of Staffordshire</p>
+          <a
+            className="github-link"
+            href="https://github.com/FaiqueMZM/Inventory-Management-System-Java-Servlet-Application"
+            target="_blank"
+          >
+            Github Repository Link
+            <img className="github-logo" src={github} />
+          </a>
+        </div>
+        <div className="project-card">
+          <h2 className="project-name">EduBlog 360</h2>
+          <p className="project-description">
+            EduBlog360 is a blog web application designed for multiple users to
+            share articles, with an admin review system for publishing content.
+            <br />
+            The project was developed using the Laravel framework, incorporating
+            HTML, CSS, Blade, PHP, and SQLite. This application facilitates a
+            streamlined content management system, allowing for efficient
+            submission, review, and publication processes, ideal for multi-user
+            environments.
+          </p>
+          <p>Associated with University of Staffordshire</p>
+          <a
+            className="github-link"
+            href="https://github.com/FaiqueMZM/EduBlog360-SSP2-CB008515"
+            target="_blank"
+          >
+            Github Repository Link
+            <img className="github-logo" src={github} />
+          </a>
+        </div>
+        <div className="project-card">
+          <h2 className="project-name">Get-A-Ride Cab Service</h2>
+          <p className="project-description">
+            Get-A-Ride Cab Service is a Java-based application designed to
+            manage cab service operations using Object-Oriented Programming
+            (OOP) principles and the Model View Controller (MVC) architecture.
+            <br />
+            The project provided hands-on experience in creating UML diagrams,
+            including Activity, Sequence, and Class Diagrams.
+            <br /> In addition, it involved documenting detailed test cases for
+            each use case in the system, ensuring comprehensive coverage of
+            functionality and robustness in design.
+          </p>
+          <p>Associated with University of Staffordshire</p>
+        </div>
+        <div className="project-card">
+          <h2 className="project-name">MS SQL Database Solution</h2>
+          <p className="project-description">
+            This project involved designing and implementing a Microsoft SQL
+            database solution tailored to the operational requirements of a
+            hospital.
+            <br /> The development process included creating an Entity
+            Relationship Diagram (ERD) at a high level, normalizing the
+            relational schema to 3NF, and conducting comprehensive testing
+            through predefined test cases.
+            <br /> The solution provided a robust data management framework
+            ensuring the hospital's operational efficiency.
+          </p>
+          <p>Associated with University of Staffordshire</p>
         </div>
       </Slider>
     </section>
