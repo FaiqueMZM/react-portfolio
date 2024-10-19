@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./NavBar.css";
 import logo from "../assets/apple-touch-icon.png";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu5Fill } from "react-icons/ri";
