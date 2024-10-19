@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "hhttps://faiquemzm.netlify.app",
+  "homepage": "https://faiquemzm.github.io/react-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
