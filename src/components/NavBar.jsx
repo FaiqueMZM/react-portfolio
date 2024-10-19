@@ -6,8 +6,8 @@ import { RiMenu5Fill } from "react-icons/ri";
 import cv from "../assets/cv.pdf";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to track menu open/close
-  const [isClosing, setIsClosing] = useState(false); // State for closing animation
+  const [isOpen, setIsOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   const toggleMenu = () => {
     if (isOpen) {
