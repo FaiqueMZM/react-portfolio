@@ -3,6 +3,7 @@ import "./Navbar.css";
 import logo from "../assets/apple-touch-icon.png";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu5Fill } from "react-icons/ri";
+import cv from "../assets/cv/pdf";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to track menu open/close
@@ -50,7 +51,7 @@ const NavBar = () => {
           <a href="#contact">Contact Me</a>
         </li>
         <li>
-          <a href={require("../assets/CV.pdf")} download className="cv-button">
+          <a href={cv} download className="cv-button">
             Download CV
           </a>
         </li>
