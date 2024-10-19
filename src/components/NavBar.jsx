@@ -3,7 +3,7 @@ import "./NavBar.css";
 import logo from "../assets/apple-touch-icon.png";
 import { FaTimes } from "react-icons/fa";
 import { RiMenu5Fill } from "react-icons/ri";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/CV.pdf";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
