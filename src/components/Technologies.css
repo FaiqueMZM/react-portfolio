@@ -46,23 +46,23 @@
   color: #14213d;
 }
 
-/* Databases and Cloud Services Flexbox */
 .databases-cloud-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Align to top */
+  align-items: flex-start;
   margin: 0 200px;
 }
 
 .databases {
-  flex-basis: 50%; /* Two-thirds of the container */
+  flex-basis: 50%;
+  margin: 0;
 }
 
 .cloud-services {
-  flex-basis: 50%; /* One-third of the container */
+  flex-basis: 50%;
+  margin: 0;
 }
 
-/* Databases grid for inline display */
 .databases-grid {
   display: flex;
   justify-content: center;

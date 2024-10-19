@@ -14,7 +14,7 @@ const Projects = () => {
     slidesToScroll: 2,
     responsive: [
       {
-        breakpoint: 830,
+        breakpoint: 1160,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
