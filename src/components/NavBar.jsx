@@ -50,7 +50,7 @@ const NavBar = () => {
           <a href="#contact">Contact Me</a>
         </li>
         <li>
-          <a href="/path-to-cv" download className="cv-button">
+          <a href={require("../assets/CV.pdf")} download className="cv-button">
             Download CV
           </a>
         </li>
