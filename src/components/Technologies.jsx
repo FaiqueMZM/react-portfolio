@@ -9,6 +9,7 @@ import php from "../assets/php.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
 import bootstrap from "../assets/bootstrap.svg";
+import tailwind from "../assets/tailwind.svg";
 import reactjs from "../assets/react.svg";
 import nodejs from "../assets/node.svg";
 import mysql from "../assets/mysql.svg";
@@ -28,6 +29,7 @@ const technologies = {
     { name: "HTML", logo: html },
     { name: "CSS", logo: css },
     { name: "Bootstrap", logo: bootstrap },
+    { name: "Tailwind", logo: tailwind },
     { name: "ReactJS", logo: reactjs },
     { name: "NodeJS", logo: nodejs },
   ],
