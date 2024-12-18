@@ -21,9 +21,9 @@ const technologies = {
     { name: "Java", logo: java },
     { name: "JavaScript", logo: javascript },
     { name: "TypeScript", logo: typescript },
-    { name: "C++", logo: cpp },
+    // { name: "C++", logo: cpp },
     { name: "Python", logo: python },
-    { name: "PHP", logo: php },
+    // { name: "PHP", logo: php },
   ],
   webDevelopment: [
     { name: "HTML", logo: html },
